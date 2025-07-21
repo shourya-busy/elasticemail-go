@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecurityApikeysByNameDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -37,7 +38,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecurityApikeysByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -51,7 +52,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecurityApikeysByNamePut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -65,7 +66,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecurityApikeysGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SecurityAPI.SecurityApikeysGet(context.Background()).Execute()
 
@@ -77,7 +78,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecurityApikeysPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SecurityAPI.SecurityApikeysPost(context.Background()).Execute()
 
@@ -89,7 +90,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecuritySmtpByNameDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -102,7 +103,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecuritySmtpByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -116,7 +117,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecuritySmtpByNamePut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -130,7 +131,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecuritySmtpGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SecurityAPI.SecuritySmtpGet(context.Background()).Execute()
 
@@ -142,7 +143,7 @@ func Test_ElasticEmail_SecurityAPIService(t *testing.T) {
 
 	t.Run("Test SecurityAPIService SecuritySmtpPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SecurityAPI.SecuritySmtpPost(context.Background()).Execute()
 

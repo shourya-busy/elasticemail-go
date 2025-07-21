@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_EventsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsByTransactionidGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var transactionid string
 
@@ -38,7 +39,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsChannelsByNameExportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -52,7 +53,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsChannelsByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -66,7 +67,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsChannelsExportByIdStatusGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -80,7 +81,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsExportByIdStatusGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -94,7 +95,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsExportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EventsAPI.EventsExportPost(context.Background()).Execute()
 
@@ -106,7 +107,7 @@ func Test_ElasticEmail_EventsAPIService(t *testing.T) {
 
 	t.Run("Test EventsAPIService EventsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EventsAPI.EventsGet(context.Background()).Execute()
 

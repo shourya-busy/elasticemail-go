@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsBouncesGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsBouncesGet(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsBouncesImportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.SuppressionsAPI.SuppressionsBouncesImportPost(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsBouncesPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsBouncesPost(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsByEmailDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -72,7 +73,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsByEmailGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -86,7 +87,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsComplaintsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsComplaintsGet(context.Background()).Execute()
 
@@ -98,7 +99,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsComplaintsImportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.SuppressionsAPI.SuppressionsComplaintsImportPost(context.Background()).Execute()
 
@@ -109,7 +110,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsComplaintsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsComplaintsPost(context.Background()).Execute()
 
@@ -121,7 +122,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsGet(context.Background()).Execute()
 
@@ -133,7 +134,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsUnsubscribesGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsUnsubscribesGet(context.Background()).Execute()
 
@@ -145,7 +146,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsUnsubscribesImportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.SuppressionsAPI.SuppressionsUnsubscribesImportPost(context.Background()).Execute()
 
@@ -156,7 +157,7 @@ func Test_ElasticEmail_SuppressionsAPIService(t *testing.T) {
 
 	t.Run("Test SuppressionsAPIService SuppressionsUnsubscribesPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SuppressionsAPI.SuppressionsUnsubscribesPost(context.Background()).Execute()
 

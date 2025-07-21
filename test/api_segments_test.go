@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
 
 	t.Run("Test SegmentsAPIService SegmentsByNameDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -37,7 +38,7 @@ func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
 
 	t.Run("Test SegmentsAPIService SegmentsByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -51,7 +52,7 @@ func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
 
 	t.Run("Test SegmentsAPIService SegmentsByNamePut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -65,7 +66,7 @@ func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
 
 	t.Run("Test SegmentsAPIService SegmentsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SegmentsAPI.SegmentsGet(context.Background()).Execute()
 
@@ -77,7 +78,7 @@ func Test_ElasticEmail_SegmentsAPIService(t *testing.T) {
 
 	t.Run("Test SegmentsAPIService SegmentsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SegmentsAPI.SegmentsPost(context.Background()).Execute()
 

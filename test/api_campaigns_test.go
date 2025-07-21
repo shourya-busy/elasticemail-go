@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsByNameDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -37,7 +38,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -51,7 +52,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsByNamePausePut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -64,7 +65,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsByNamePut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -78,7 +79,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.CampaignsAPI.CampaignsGet(context.Background()).Execute()
 
@@ -90,7 +91,7 @@ func Test_ElasticEmail_CampaignsAPIService(t *testing.T) {
 
 	t.Run("Test CampaignsAPIService CampaignsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.CampaignsAPI.CampaignsPost(context.Background()).Execute()
 

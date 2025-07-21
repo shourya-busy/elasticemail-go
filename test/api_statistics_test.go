@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
 
 	t.Run("Test StatisticsAPIService StatisticsCampaignsByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -38,7 +39,7 @@ func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
 
 	t.Run("Test StatisticsAPIService StatisticsCampaignsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.StatisticsAPI.StatisticsCampaignsGet(context.Background()).Execute()
 
@@ -50,7 +51,7 @@ func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
 
 	t.Run("Test StatisticsAPIService StatisticsChannelsByNameGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var name string
 
@@ -64,7 +65,7 @@ func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
 
 	t.Run("Test StatisticsAPIService StatisticsChannelsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.StatisticsAPI.StatisticsChannelsGet(context.Background()).Execute()
 
@@ -76,7 +77,7 @@ func Test_ElasticEmail_StatisticsAPIService(t *testing.T) {
 
 	t.Run("Test StatisticsAPIService StatisticsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.StatisticsAPI.StatisticsGet(context.Background()).Execute()
 

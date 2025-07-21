@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByDomainDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var domain string
 
@@ -37,7 +38,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByDomainGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var domain string
 
@@ -51,7 +52,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByDomainPut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var domain string
 
@@ -65,7 +66,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByDomainRestrictedGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var domain string
 
@@ -79,7 +80,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByDomainVerificationPut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var domain string
 
@@ -93,7 +94,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsByEmailDefaultPatch", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -107,7 +108,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DomainsAPI.DomainsGet(context.Background()).Execute()
 
@@ -119,7 +120,7 @@ func Test_ElasticEmail_DomainsAPIService(t *testing.T) {
 
 	t.Run("Test DomainsAPIService DomainsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DomainsAPI.DomainsPost(context.Background()).Execute()
 

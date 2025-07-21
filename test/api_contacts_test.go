@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsByEmailDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -37,7 +38,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsByEmailGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -51,7 +52,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsByEmailPut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var email string
 
@@ -65,7 +66,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsDeletePost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.ContactsAPI.ContactsDeletePost(context.Background()).Execute()
 
@@ -76,7 +77,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsExportByIdStatusGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -90,7 +91,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsExportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ContactsAPI.ContactsExportPost(context.Background()).Execute()
 
@@ -102,7 +103,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ContactsAPI.ContactsGet(context.Background()).Execute()
 
@@ -114,7 +115,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsImportPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.ContactsAPI.ContactsImportPost(context.Background()).Execute()
 
@@ -125,7 +126,7 @@ func Test_ElasticEmail_ContactsAPIService(t *testing.T) {
 
 	t.Run("Test ContactsAPIService ContactsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.ContactsAPI.ContactsPost(context.Background()).Execute()
 

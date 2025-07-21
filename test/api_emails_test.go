@@ -11,10 +11,11 @@ package ElasticEmail
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/elasticemail/elasticemail-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/shourya-busy/elasticemail-go"
 )
 
 func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
 
 	t.Run("Test EmailsAPIService EmailsByMsgidViewGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var msgid string
 
@@ -38,7 +39,7 @@ func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
 
 	t.Run("Test EmailsAPIService EmailsByTransactionidStatusGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var transactionid string
 
@@ -52,7 +53,7 @@ func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
 
 	t.Run("Test EmailsAPIService EmailsMergefilePost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EmailsAPI.EmailsMergefilePost(context.Background()).Execute()
 
@@ -64,7 +65,7 @@ func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
 
 	t.Run("Test EmailsAPIService EmailsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EmailsAPI.EmailsPost(context.Background()).Execute()
 
@@ -76,7 +77,7 @@ func Test_ElasticEmail_EmailsAPIService(t *testing.T) {
 
 	t.Run("Test EmailsAPIService EmailsTransactionalPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.EmailsAPI.EmailsTransactionalPost(context.Background()).Execute()
 

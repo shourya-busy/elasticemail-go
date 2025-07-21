@@ -30,7 +30,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```go
-import ElasticEmail "github.com/shourya-busy/elasticemail-go"
+import ElasticEmail "github.com/elasticemail/elasticemail-go"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:

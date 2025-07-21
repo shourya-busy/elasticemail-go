@@ -1,4 +1,4 @@
-module github.com/shourya-busy/elasticemail-go
+module github.com/elasticemail/elasticemail-go
 
 go 1.24.0
 
