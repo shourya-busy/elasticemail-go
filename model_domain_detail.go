@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -53,15 +53,15 @@ type DomainDetail struct {
 // will change when the set of required properties is changed
 func NewDomainDetail() *DomainDetail {
 	this := DomainDetail{}
-	var type_ TrackingType = NONE
+	var type_ TrackingType = TRACKINGTYPE_NONE
 	this.Type = &type_
-	var trackingStatus TrackingValidationStatus = VALIDATED
+	var trackingStatus TrackingValidationStatus = TRACKINGVALIDATIONSTATUS_VALIDATED
 	this.TrackingStatus = &trackingStatus
-	var certificateStatus CertificateValidationStatus = ERROR_OCCURED
+	var certificateStatus CertificateValidationStatus = CERTIFICATEVALIDATIONSTATUS_ERROR_OCCURED
 	this.CertificateStatus = &certificateStatus
-	var trackingTypeUserRequest TrackingType = NONE
+	var trackingTypeUserRequest TrackingType = TRACKINGTYPE_NONE
 	this.TrackingTypeUserRequest = &trackingTypeUserRequest
-	var ownership DomainOwner = CURRENT
+	var ownership DomainOwner = DOMAINOWNER_CURRENT
 	this.Ownership = &ownership
 	return &this
 }
@@ -71,15 +71,15 @@ func NewDomainDetail() *DomainDetail {
 // but it doesn't guarantee that properties required by API are set
 func NewDomainDetailWithDefaults() *DomainDetail {
 	this := DomainDetail{}
-	var type_ TrackingType = NONE
+	var type_ TrackingType = TRACKINGTYPE_NONE
 	this.Type = &type_
-	var trackingStatus TrackingValidationStatus = VALIDATED
+	var trackingStatus TrackingValidationStatus = TRACKINGVALIDATIONSTATUS_VALIDATED
 	this.TrackingStatus = &trackingStatus
-	var certificateStatus CertificateValidationStatus = ERROR_OCCURED
+	var certificateStatus CertificateValidationStatus = CERTIFICATEVALIDATIONSTATUS_ERROR_OCCURED
 	this.CertificateStatus = &certificateStatus
-	var trackingTypeUserRequest TrackingType = NONE
+	var trackingTypeUserRequest TrackingType = TRACKINGTYPE_NONE
 	this.TrackingTypeUserRequest = &trackingTypeUserRequest
-	var ownership DomainOwner = CURRENT
+	var ownership DomainOwner = DOMAINOWNER_CURRENT
 	this.Ownership = &ownership
 	return &this
 }

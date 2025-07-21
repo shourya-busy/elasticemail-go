@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -21,19 +21,19 @@ type TemplateType string
 
 // List of TemplateType
 const (
-	RAW_HTML TemplateType = "RawHTML"
-	DRAG_DROP_EDITOR TemplateType = "DragDropEditor"
-	LANDING_PAGE_EDITOR TemplateType = "LandingPageEditor"
-	TEMPLATE_EDITOR TemplateType = "TemplateEditor"
-	FORM_TEMPLATE TemplateType = "FormTemplate"
-	LANDING_PAGE_TEMPLATE TemplateType = "LandingPageTemplate"
-	PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "PaymentConfirmationTemplate"
-	LANDING_PAGE_PRODUCT_TEMPLATE TemplateType = "LandingPageProductTemplate"
-	LANDING_PAGE_CHECKOUT_TEMPLATE TemplateType = "LandingPageCheckoutTemplate"
-	LANDING_PAGE_PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "LandingPagePaymentConfirmationTemplate"
-	LANDING_PAGE_NEWSLETTER_PRODUCT_TEMPLATE TemplateType = "LandingPageNewsletterProductTemplate"
-	LANDING_PAGE_NEWSLETTER_PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "LandingPageNewsletterPaymentConfirmationTemplate"
-	NEWSLETTER_SUBSCRIPTION_CANCELLATION_TEMPLATE TemplateType = "NewsletterSubscriptionCancellationTemplate"
+	TEMPLATETYPE_RAW_HTML TemplateType = "RawHTML"
+	TEMPLATETYPE_DRAG_DROP_EDITOR TemplateType = "DragDropEditor"
+	TEMPLATETYPE_LANDING_PAGE_EDITOR TemplateType = "LandingPageEditor"
+	TEMPLATETYPE_TEMPLATE_EDITOR TemplateType = "TemplateEditor"
+	TEMPLATETYPE_FORM_TEMPLATE TemplateType = "FormTemplate"
+	TEMPLATETYPE_LANDING_PAGE_TEMPLATE TemplateType = "LandingPageTemplate"
+	TEMPLATETYPE_PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "PaymentConfirmationTemplate"
+	TEMPLATETYPE_LANDING_PAGE_PRODUCT_TEMPLATE TemplateType = "LandingPageProductTemplate"
+	TEMPLATETYPE_LANDING_PAGE_CHECKOUT_TEMPLATE TemplateType = "LandingPageCheckoutTemplate"
+	TEMPLATETYPE_LANDING_PAGE_PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "LandingPagePaymentConfirmationTemplate"
+	TEMPLATETYPE_LANDING_PAGE_NEWSLETTER_PRODUCT_TEMPLATE TemplateType = "LandingPageNewsletterProductTemplate"
+	TEMPLATETYPE_LANDING_PAGE_NEWSLETTER_PAYMENT_CONFIRMATION_TEMPLATE TemplateType = "LandingPageNewsletterPaymentConfirmationTemplate"
+	TEMPLATETYPE_NEWSLETTER_SUBSCRIPTION_CANCELLATION_TEMPLATE TemplateType = "NewsletterSubscriptionCancellationTemplate"
 )
 
 // All allowed values of TemplateType enum

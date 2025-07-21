@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -21,23 +21,23 @@ type MessageCategoryEnum string
 
 // List of MessageCategoryEnum
 const (
-	UNKNOWN MessageCategoryEnum = "Unknown"
-	IGNORE MessageCategoryEnum = "Ignore"
-	SPAM MessageCategoryEnum = "Spam"
-	BLACK_LISTED MessageCategoryEnum = "BlackListed"
-	NO_MAILBOX MessageCategoryEnum = "NoMailbox"
-	GREY_LISTED MessageCategoryEnum = "GreyListed"
-	THROTTLED MessageCategoryEnum = "Throttled"
-	TIMEOUT MessageCategoryEnum = "Timeout"
-	CONNECTION_PROBLEM MessageCategoryEnum = "ConnectionProblem"
-	SPF_PROBLEM MessageCategoryEnum = "SPFProblem"
-	ACCOUNT_PROBLEM MessageCategoryEnum = "AccountProblem"
-	DNS_PROBLEM MessageCategoryEnum = "DNSProblem"
-	NOT_DELIVERED_CANCELLED MessageCategoryEnum = "NotDeliveredCancelled"
-	CODE_ERROR MessageCategoryEnum = "CodeError"
-	MANUAL_CANCEL MessageCategoryEnum = "ManualCancel"
-	CONNECTION_TERMINATED MessageCategoryEnum = "ConnectionTerminated"
-	NOT_DELIVERED MessageCategoryEnum = "NotDelivered"
+	MESSAGECATEGORYENUM_UNKNOWN MessageCategoryEnum = "Unknown"
+	MESSAGECATEGORYENUM_IGNORE MessageCategoryEnum = "Ignore"
+	MESSAGECATEGORYENUM_SPAM MessageCategoryEnum = "Spam"
+	MESSAGECATEGORYENUM_BLACK_LISTED MessageCategoryEnum = "BlackListed"
+	MESSAGECATEGORYENUM_NO_MAILBOX MessageCategoryEnum = "NoMailbox"
+	MESSAGECATEGORYENUM_GREY_LISTED MessageCategoryEnum = "GreyListed"
+	MESSAGECATEGORYENUM_THROTTLED MessageCategoryEnum = "Throttled"
+	MESSAGECATEGORYENUM_TIMEOUT MessageCategoryEnum = "Timeout"
+	MESSAGECATEGORYENUM_CONNECTION_PROBLEM MessageCategoryEnum = "ConnectionProblem"
+	MESSAGECATEGORYENUM_SPF_PROBLEM MessageCategoryEnum = "SPFProblem"
+	MESSAGECATEGORYENUM_ACCOUNT_PROBLEM MessageCategoryEnum = "AccountProblem"
+	MESSAGECATEGORYENUM_DNS_PROBLEM MessageCategoryEnum = "DNSProblem"
+	MESSAGECATEGORYENUM_NOT_DELIVERED_CANCELLED MessageCategoryEnum = "NotDeliveredCancelled"
+	MESSAGECATEGORYENUM_CODE_ERROR MessageCategoryEnum = "CodeError"
+	MESSAGECATEGORYENUM_MANUAL_CANCEL MessageCategoryEnum = "ManualCancel"
+	MESSAGECATEGORYENUM_CONNECTION_TERMINATED MessageCategoryEnum = "ConnectionTerminated"
+	MESSAGECATEGORYENUM_NOT_DELIVERED MessageCategoryEnum = "NotDelivered"
 )
 
 // All allowed values of MessageCategoryEnum enum

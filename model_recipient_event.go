@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -39,7 +39,7 @@ type RecipientEvent struct {
 	MessageCategory *MessageCategory `json:"MessageCategory,omitempty"`
 	// Date of next try
 	NextTryOn NullableTime `json:"NextTryOn,omitempty"`
-	// Content of message, HTML encoded
+	// Content of message, BODYCONTENTTYPE_HTML encoded
 	Message *string `json:"Message,omitempty"`
 	// IP which this email was sent through
 	IPAddress *string `json:"IPAddress,omitempty"`
@@ -53,9 +53,9 @@ type RecipientEvent struct {
 // will change when the set of required properties is changed
 func NewRecipientEvent() *RecipientEvent {
 	this := RecipientEvent{}
-	var eventType EventType = SUBMISSION
+	var eventType EventType = EVENTTYPE_SUBMISSION
 	this.EventType = &eventType
-	var messageCategory MessageCategory = UNKNOWN
+	var messageCategory MessageCategory = MESSAGECATEGORY_UNKNOWN
 	this.MessageCategory = &messageCategory
 	return &this
 }
@@ -65,9 +65,9 @@ func NewRecipientEvent() *RecipientEvent {
 // but it doesn't guarantee that properties required by API are set
 func NewRecipientEventWithDefaults() *RecipientEvent {
 	this := RecipientEvent{}
-	var eventType EventType = SUBMISSION
+	var eventType EventType = EVENTTYPE_SUBMISSION
 	this.EventType = &eventType
-	var messageCategory MessageCategory = UNKNOWN
+	var messageCategory MessageCategory = MESSAGECATEGORY_UNKNOWN
 	this.MessageCategory = &messageCategory
 	return &this
 }

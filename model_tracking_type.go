@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -16,17 +16,17 @@ import (
 	"fmt"
 )
 
-// TrackingType HTTP or HTTPS Protocal used for link tracking.
+// TrackingType TRACKINGTYPE_HTTP or HTTPS Protocal used for link tracking.
 type TrackingType string
 
 // List of TrackingType
 const (
-	NONE TrackingType = "None"
-	DELETE TrackingType = "Delete"
-	HTTP TrackingType = "Http"
-	EXTERNAL_HTTPS TrackingType = "ExternalHttps"
-	INTERNAL_CERT_HTTPS TrackingType = "InternalCertHttps"
-	LETS_ENCRYPT_CERT TrackingType = "LetsEncryptCert"
+	TRACKINGTYPE_NONE TrackingType = "None"
+	TRACKINGTYPE_DELETE TrackingType = "Delete"
+	TRACKINGTYPE_HTTP TrackingType = "Http"
+	TRACKINGTYPE_EXTERNAL_HTTPS TrackingType = "ExternalHttps"
+	TRACKINGTYPE_INTERNAL_CERT_HTTPS TrackingType = "InternalCertHttps"
+	TRACKINGTYPE_LETS_ENCRYPT_CERT TrackingType = "LetsEncryptCert"
 )
 
 // All allowed values of TrackingType enum

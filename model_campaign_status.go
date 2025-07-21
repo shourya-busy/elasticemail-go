@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -21,14 +21,14 @@ type CampaignStatus string
 
 // List of CampaignStatus
 const (
-	DELETED CampaignStatus = "Deleted"
-	ACTIVE CampaignStatus = "Active"
-	PROCESSING CampaignStatus = "Processing"
-	SENDING CampaignStatus = "Sending"
-	COMPLETED CampaignStatus = "Completed"
-	PAUSED CampaignStatus = "Paused"
-	CANCELLED CampaignStatus = "Cancelled"
-	DRAFT CampaignStatus = "Draft"
+	CAMPAIGNSTATUS_DELETED CampaignStatus = "Deleted"
+	CAMPAIGNSTATUS_ACTIVE CampaignStatus = "Active"
+	CAMPAIGNSTATUS_PROCESSING CampaignStatus = "Processing"
+	CAMPAIGNSTATUS_SENDING CampaignStatus = "Sending"
+	CAMPAIGNSTATUS_COMPLETED CampaignStatus = "Completed"
+	CAMPAIGNSTATUS_PAUSED CampaignStatus = "Paused"
+	CAMPAIGNSTATUS_CANCELLED CampaignStatus = "Cancelled"
+	CAMPAIGNSTATUS_DRAFT CampaignStatus = "Draft"
 )
 
 // All allowed values of CampaignStatus enum

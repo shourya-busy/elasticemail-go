@@ -1,7 +1,7 @@
 /*
 Elastic Email REST API
 
-This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
+This API is based on the REST API architecture, allowing the user to easily manage their data with this resource-based approach.    Every API call is established on which specific request type (GET, POST, PUT, TRACKINGTYPE_DELETE) will be used.    The API has a limit of 20 concurrent connections and a hard timeout of 600 seconds per request.    To start using this API, you will need your Access Token (available <a target=\"_blank\" href=\"https://app.elasticemail.com/marketing/settings/new/manage-api\">here</a>). Remember to keep it safe. Required access levels are listed in the given request’s description.    Downloadable library clients can be found in our Github repository <a target=\"_blank\" href=\"https://github.com/ElasticEmail?tab=repositories&q=%22rest+api%22+in%3Areadme\">here</a>
 
 API version: 4.0.0
 Contact: support@elasticemail.com
@@ -21,15 +21,15 @@ type ContactSource string
 
 // List of ContactSource
 const (
-	DELIVERY_API ContactSource = "DeliveryApi"
-	MANUAL_INPUT ContactSource = "ManualInput"
-	FILE_UPLOAD ContactSource = "FileUpload"
-	WEB_FORM ContactSource = "WebForm"
-	CONTACT_API ContactSource = "ContactApi"
-	VERIFICATION_API ContactSource = "VerificationApi"
-	FILE_VERIFICATION_API ContactSource = "FileVerificationApi"
-	PILOT_BILLING_PLAN ContactSource = "PilotBillingPlan"
-	PAID_NEWSLETTER ContactSource = "PaidNewsletter"
+	CONTACTSOURCE_DELIVERY_API ContactSource = "DeliveryApi"
+	CONTACTSOURCE_MANUAL_INPUT ContactSource = "ManualInput"
+	CONTACTSOURCE_FILE_UPLOAD ContactSource = "FileUpload"
+	CONTACTSOURCE_WEB_FORM ContactSource = "WebForm"
+	CONTACTSOURCE_CONTACT_API ContactSource = "ContactApi"
+	CONTACTSOURCE_VERIFICATION_API ContactSource = "VerificationApi"
+	CONTACTSOURCE_FILE_VERIFICATION_API ContactSource = "FileVerificationApi"
+	CONTACTSOURCE_PILOT_BILLING_PLAN ContactSource = "PilotBillingPlan"
+	CONTACTSOURCE_PAID_NEWSLETTER ContactSource = "PaidNewsletter"
 )
 
 // All allowed values of ContactSource enum
